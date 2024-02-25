@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B99F006618B833A6D7C9883FB8C85D1 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06420FEDB00F0FA3D04EC1433A8C8F6D /* iOSDropDown.swift */; };
+		B9856D940156DD0922B3F60FA0E7CF70 /* iOSDropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4914A4F7E9116E7F9A8691C5C5068 /* iOSDropDown-dummy.m */; };
+		C9244F90F347C4AF4CE7467933EB1171 /* Pods-GPA Calculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CA156B47DA541B1C2EDCE6FE0B6B84 /* Pods-GPA Calculator-dummy.m */; };
+		D7300CA9E783B9FFF64878D9CE084F96 /* iOSDropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A2042DDF5152D7F76A3708DAE94C98 /* iOSDropDown-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE1AC28B5652537B3D8D79A2B745C1CB /* Pods-GPA Calculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78811FCFD323831EEFD21F8684B55A78 /* Pods-GPA Calculator-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA78C9C5DDDDA3CF39DD68B8C138CB36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C76CE6CD60B1CE55A174F03CC59AE17;
+			remoteInfo = iOSDropDown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06420FEDB00F0FA3D04EC1433A8C8F6D /* iOSDropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = iOSDropDown.swift; path = iOSDropDown/Classes/iOSDropDown.swift; sourceTree = "<group>"; };
+		15EC39D9886F5A9EFBF5B65F07FA4BF4 /* Pods-GPA Calculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GPA Calculator.modulemap"; sourceTree = "<group>"; };
+		2AB4914A4F7E9116E7F9A8691C5C5068 /* iOSDropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSDropDown-dummy.m"; sourceTree = "<group>"; };
+		4436BBBA00BC81B0D032862F627B5DAF /* iOSDropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDropDown-prefix.pch"; sourceTree = "<group>"; };
+		69E569C838C662DF1E20788E8E8682AB /* iOSDropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDropDown.debug.xcconfig; sourceTree = "<group>"; };
+		78811FCFD323831EEFD21F8684B55A78 /* Pods-GPA Calculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GPA Calculator-umbrella.h"; sourceTree = "<group>"; };
+		89E5C9EEC42944E8259C9C472A50363C /* Pods-GPA Calculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GPA Calculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		8DEE6A25BE7A9DF89A788D736F651EDF /* iOSDropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDropDown.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B7CA156B47DA541B1C2EDCE6FE0B6B84 /* Pods-GPA Calculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GPA Calculator-dummy.m"; sourceTree = "<group>"; };
+		C0A2042DDF5152D7F76A3708DAE94C98 /* iOSDropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDropDown-umbrella.h"; sourceTree = "<group>"; };
+		CCE00577991FB511D48BC18548D3B2CA /* Pods-GPA Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPA Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		D548B8CF5695C232213007437DF87B06 /* Pods-GPA Calculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GPA Calculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1F5AA992A191A5E5F62096693FFA3A5 /* Pods-GPA Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GPA Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		EA5937B2BFC638A238A315F829B6E224 /* Pods-GPA Calculator */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-GPA Calculator"; path = "libPods-GPA Calculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7958D66D71A440D52BE305C31DCBD1 /* iOSDropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSDropDown.modulemap; sourceTree = "<group>"; };
+		FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* libiOSDropDown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78DAE50B30BE1E78BCD4B84074661F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CAA7470998E4128C2A4B4D44C11ABD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11F3B6517775FF26CADA3FF89807EDE6 /* Pods-GPA Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				15EC39D9886F5A9EFBF5B65F07FA4BF4 /* Pods-GPA Calculator.modulemap */,
+				D548B8CF5695C232213007437DF87B06 /* Pods-GPA Calculator-acknowledgements.markdown */,
+				89E5C9EEC42944E8259C9C472A50363C /* Pods-GPA Calculator-acknowledgements.plist */,
+				B7CA156B47DA541B1C2EDCE6FE0B6B84 /* Pods-GPA Calculator-dummy.m */,
+				78811FCFD323831EEFD21F8684B55A78 /* Pods-GPA Calculator-umbrella.h */,
+				E1F5AA992A191A5E5F62096693FFA3A5 /* Pods-GPA Calculator.debug.xcconfig */,
+				CCE00577991FB511D48BC18548D3B2CA /* Pods-GPA Calculator.release.xcconfig */,
+			);
+			name = "Pods-GPA Calculator";
+			path = "Target Support Files/Pods-GPA Calculator";
+			sourceTree = "<group>";
+		};
+		138230ABDB85D6EC8282007EB0B566D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE7958D66D71A440D52BE305C31DCBD1 /* iOSDropDown.modulemap */,
+				2AB4914A4F7E9116E7F9A8691C5C5068 /* iOSDropDown-dummy.m */,
+				4436BBBA00BC81B0D032862F627B5DAF /* iOSDropDown-prefix.pch */,
+				C0A2042DDF5152D7F76A3708DAE94C98 /* iOSDropDown-umbrella.h */,
+				69E569C838C662DF1E20788E8E8682AB /* iOSDropDown.debug.xcconfig */,
+				8DEE6A25BE7A9DF89A788D736F651EDF /* iOSDropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOSDropDown";
+			sourceTree = "<group>";
+		};
+		2474D57BB12E62AC6082C5531B30DE0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* libiOSDropDown.a */,
+				EA5937B2BFC638A238A315F829B6E224 /* Pods-GPA Calculator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58CB23AD71973508A8C67323D9935C19 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11F3B6517775FF26CADA3FF89807EDE6 /* Pods-GPA Calculator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		60E09F58A4B6EF1F34AC349248B764C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C520F1D897DA31E819719545B43D50A7 /* iOSDropDown */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C520F1D897DA31E819719545B43D50A7 /* iOSDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				06420FEDB00F0FA3D04EC1433A8C8F6D /* iOSDropDown.swift */,
+				138230ABDB85D6EC8282007EB0B566D5 /* Support Files */,
+			);
+			path = iOSDropDown;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				60E09F58A4B6EF1F34AC349248B764C0 /* Pods */,
+				2474D57BB12E62AC6082C5531B30DE0A /* Products */,
+				58CB23AD71973508A8C67323D9935C19 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A82475EB1F94DC4543CCDC4511147ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7300CA9E783B9FFF64878D9CE084F96 /* iOSDropDown-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B28956633F77EADC0459A4E186DD730 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE1AC28B5652537B3D8D79A2B745C1CB /* Pods-GPA Calculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		01702B5E61BDD788E8FB03A78098743F /* Pods-GPA Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E36D9D0A5453E6DF3A55D3A35D31F27C /* Build configuration list for PBXNativeTarget "Pods-GPA Calculator" */;
+			buildPhases = (
+				2B28956633F77EADC0459A4E186DD730 /* Headers */,
+				E2805C3324DDCD2326C40A821DF11934 /* Sources */,
+				78DAE50B30BE1E78BCD4B84074661F6F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DFE69A007DF3A0516D512C56DD4A2A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-GPA Calculator";
+			productName = "Pods-GPA Calculator";
+			productReference = EA5937B2BFC638A238A315F829B6E224 /* Pods-GPA Calculator */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B27AF80C35F6B97A52E74A39DDBCD7B7 /* Build configuration list for PBXNativeTarget "iOSDropDown" */;
+			buildPhases = (
+				1A82475EB1F94DC4543CCDC4511147ED /* Headers */,
+				E57BA3E0698DBDEA6998312439084A11 /* Sources */,
+				C8CAA7470998E4128C2A4B4D44C11ABD /* Frameworks */,
+				C539A1BE5F4A896D6E5A4F32E75E1328 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDropDown;
+			productName = iOSDropDown;
+			productReference = FCEEA8BBD9DA8D0CCE0A3092B20E3FA7 /* libiOSDropDown.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2474D57BB12E62AC6082C5531B30DE0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */,
+				01702B5E61BDD788E8FB03A78098743F /* Pods-GPA Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C539A1BE5F4A896D6E5A4F32E75E1328 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/iOSDropDown/iOSDropDown.modulemap",
+				"${PODS_ROOT}/Headers/Public/iOSDropDown/iOSDropDown-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/iOSDropDown-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/iOSDropDown/iOSDropDown.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/iOSDropDown/iOSDropDown-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2805C3324DDCD2326C40A821DF11934 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9244F90F347C4AF4CE7467933EB1171 /* Pods-GPA Calculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57BA3E0698DBDEA6998312439084A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B99F006618B833A6D7C9883FB8C85D1 /* iOSDropDown.swift in Sources */,
+				B9856D940156DD0922B3F60FA0E7CF70 /* iOSDropDown-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DFE69A007DF3A0516D512C56DD4A2A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDropDown;
+			target = 3C76CE6CD60B1CE55A174F03CC59AE17 /* iOSDropDown */;
+			targetProxy = DA78C9C5DDDDA3CF39DD68B8C138CB36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		28D43CC9C572E7502BFAD004CD71810F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE00577991FB511D48BC18548D3B2CA /* Pods-GPA Calculator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPA Calculator/Pods-GPA Calculator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59719D759211686E7100D8C2398F2084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DEE6A25BE7A9DF89A788D736F651EDF /* iOSDropDown.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDropDown/iOSDropDown-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = Headers/Public/iOSDropDown/iOSDropDown.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = iOSDropDown;
+				PRODUCT_NAME = iOSDropDown;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		686ECAEE162F76EBB41B3AF8DD83DCDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E569C838C662DF1E20788E8E8682AB /* iOSDropDown.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDropDown/iOSDropDown-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MODULEMAP_FILE = Headers/Public/iOSDropDown/iOSDropDown.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = iOSDropDown;
+				PRODUCT_NAME = iOSDropDown;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D34BDFD9B7CF19EE047EB968B740C218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1F5AA992A191A5E5F62096693FFA3A5 /* Pods-GPA Calculator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GPA Calculator/Pods-GPA Calculator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B27AF80C35F6B97A52E74A39DDBCD7B7 /* Build configuration list for PBXNativeTarget "iOSDropDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686ECAEE162F76EBB41B3AF8DD83DCDF /* Debug */,
+				59719D759211686E7100D8C2398F2084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E36D9D0A5453E6DF3A55D3A35D31F27C /* Build configuration list for PBXNativeTarget "Pods-GPA Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34BDFD9B7CF19EE047EB968B740C218 /* Debug */,
+				28D43CC9C572E7502BFAD004CD71810F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
