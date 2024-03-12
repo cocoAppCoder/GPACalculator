@@ -132,7 +132,6 @@
 			children = (
 				62B7E5452AC77FA5009FD2EB /* AppDelegate.swift */,
 				62B7E5472AC77FA5009FD2EB /* SceneDelegate.swift */,
-				62F3E3A42AD4542800DF33CC /* CGL.xcdatamodeld */,
 				62F3E3A12AD449E500DF33CC /* Model */,
 				62F3E3A02AD449D700DF33CC /* View */,
 				62F3E39F2AD449AD00DF33CC /* Controller */,
@@ -179,6 +178,7 @@
 		62F3E3A12AD449E500DF33CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				62F3E3A42AD4542800DF33CC /* CGL.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -699,7 +699,8 @@
 				62F3E3A52AD4542800DF33CC /* CGL.xcdatamodel */,
 			);
 			currentVersion = 62F3E3A52AD4542800DF33CC /* CGL.xcdatamodel */;
-			path = CGL.xcdatamodeld;
+			name = CGL.xcdatamodeld;
+			path = ../CGL.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

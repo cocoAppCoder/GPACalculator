@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CGL+CoreDataClass.swift">
-   </FileRef>
-   <FileRef
-      location = "group:CGL+CoreDataProperties.swift">
-   </FileRef>
-   <FileRef
       location = "group:GPA Calculator.xcodeproj">
    </FileRef>
    <FileRef
