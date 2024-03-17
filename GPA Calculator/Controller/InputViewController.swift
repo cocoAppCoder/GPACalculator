@@ -38,15 +38,19 @@ class InputViewController: UIViewController {
         
         // initialzing the drop down menus, giving options, and turning off the search option
         SelectLevel.optionArray = ["Standard", "Honors", "AP"]
+        SelectLevel.text = "Standard"
         SelectLevel.isSearchEnable = false
         
         SelectGrade.optionArray = ["0-59", "60-69", "70-79", "80-89", "90-100"]
+        SelectGrade.text = "0-59"
         SelectGrade.isSearchEnable = false
         
         SelectSemester.optionArray = ["Freshman 1st", "Freshman 2nd", "Sophmore 1st", "Sophmore 2nd", "Junior 1st", "Junior 2nd", "Senior 1st", "Senior 2nd"]
+        SelectSemester.text = "Freshman 1st"
         SelectSemester.isSearchEnable = true
         
         SelectType.optionArray = ["Elective", "Math", "English", "Science", "Social Studies"]
+        SelectType.text = "Elective"
         SelectType.isSearchEnable = true
         
         //callback function - provided by the 3rd party library downloaded from CocoaPods
@@ -138,10 +142,7 @@ class InputViewController: UIViewController {
                 }
                 
                 EnterCourseName.text = nil
-                SelectGrade.text = nil
-                SelectLevel.text = nil
-                SelectSemester.text = nil
-                SelectType.text = nil
+                viewDidLoad()
                 WorldLanguageLabel.isHidden = true
                 WorldLanguageSwitch.isHidden = true
             }
