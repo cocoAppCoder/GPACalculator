@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		62560FC72B5361E400D5C461 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62560FC62B5361E400D5C461 /* OutputViewController.swift */; };
-		6277B92A2BA687FE00AB1CD2 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277B9292BA687FE00AB1CD2 /* QuestionViewController.swift */; };
+		6277B92C2BA8CAF700AB1CD2 /* QAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6277B92B2BA8CAF700AB1CD2 /* QAController.swift */; };
 		62B7E5462AC77FA5009FD2EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7E5452AC77FA5009FD2EB /* AppDelegate.swift */; };
 		62B7E5482AC77FA5009FD2EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7E5472AC77FA5009FD2EB /* SceneDelegate.swift */; };
 		62B7E54A2AC77FA5009FD2EB /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B7E5492AC77FA5009FD2EB /* InputViewController.swift */; };
@@ -43,7 +43,7 @@
 		5C2D3ED90A74944E09253486 /* Pods-GPA Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Calculator.debug.xcconfig"; path = "Target Support Files/Pods-GPA Calculator/Pods-GPA Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		621B744F2AD39393006905D0 /* libiOSDropDown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiOSDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		62560FC62B5361E400D5C461 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
-		6277B9292BA687FE00AB1CD2 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		6277B92B2BA8CAF700AB1CD2 /* QAController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAController.swift; sourceTree = "<group>"; };
 		629557E52AD3721400B59795 /* libiOSDropDown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiOSDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B7E5422AC77FA5009FD2EB /* GPA Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B7E5452AC77FA5009FD2EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 			children = (
 				62B7E5492AC77FA5009FD2EB /* InputViewController.swift */,
 				62560FC62B5361E400D5C461 /* OutputViewController.swift */,
-				6277B9292BA687FE00AB1CD2 /* QuestionViewController.swift */,
+				6277B92B2BA8CAF700AB1CD2 /* QAController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -353,8 +353,8 @@
 			files = (
 				62560FC72B5361E400D5C461 /* OutputViewController.swift in Sources */,
 				62B7E54A2AC77FA5009FD2EB /* InputViewController.swift in Sources */,
-				6277B92A2BA687FE00AB1CD2 /* QuestionViewController.swift in Sources */,
 				62B7E5462AC77FA5009FD2EB /* AppDelegate.swift in Sources */,
+				6277B92C2BA8CAF700AB1CD2 /* QAController.swift in Sources */,
 				62B7E5482AC77FA5009FD2EB /* SceneDelegate.swift in Sources */,
 				62F3E3A62AD4542800DF33CC /* CGL.xcdatamodeld in Sources */,
 			);

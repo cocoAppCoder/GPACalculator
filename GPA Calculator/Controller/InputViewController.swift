@@ -49,7 +49,7 @@ class InputViewController: UIViewController {
         SelectSemester.text = "Freshman 1st"
         SelectSemester.isSearchEnable = true
         
-        SelectType.optionArray = ["Elective", "Math", "English", "Science", "Social Studies"]
+        SelectType.optionArray = ["Elective", "Math(Core)", "English(Core)", "Science(Core)", "Social Studies(Core)"]
         SelectType.text = "Elective"
         SelectType.isSearchEnable = true
         
@@ -120,13 +120,13 @@ class InputViewController: UIViewController {
                 cglEntity.convertedGrade = Int16(convertedGrade)
                 cglEntity.convertedLevel = Float(convertedLevel)
                 
-                if SelectType.text == "Math" {
+                if SelectType.text == "Math(Core)" {
                     cglEntity.mathCredit += 1
-                } else if SelectType.text == "English" {
+                } else if SelectType.text == "English(Core)" {
                     cglEntity.englishCredit +=  1
-                } else if SelectType.text == "Social Studies" {
+                } else if SelectType.text == "Social Studies(Core)" {
                     cglEntity.socialStudiesCredit += 1
-                } else if SelectType.text == "Science" {
+                } else if SelectType.text == "Science(Core)" {
                     cglEntity.scienceCredit += 1
                 } else if WorldLanguageSwitch.isEnabled && SelectType.text == "Elective" {
                     cglEntity.worldLanguageCredit += 1

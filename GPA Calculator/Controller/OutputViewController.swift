@@ -32,11 +32,11 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var CourseTable: UITableView!
     
-    //refrence to the data base to access the data saves
+    //reference to the data base to access the data saves
     let cglContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    //data for the table
-    var items : [CGL] = [] //collectioon of the cgl data
+    //data definition for the table
+    var items : [CGL] = [] //collection of the cgl data
     var cgl = CGL()
     var unweightedGPA = 0.0
     var weightedGPA = 0.0
@@ -48,7 +48,7 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var electiveCredit = 0
     var worldLanguageCredit = 0
     
-    
+    //get saved course information from CoreData
     func fetchCGL() {
         
         do {
@@ -84,6 +84,7 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     
+    //loading course history
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -103,7 +104,7 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
 
-        
+    //Switch that calculates weighted/unweighted GPA
     @IBAction func WeightedSwitch(_ sender: UISwitch) {
         self.fetchCGL()
         if sender.isOn {
@@ -113,6 +114,8 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    
+    //Delete action
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         // Create swipe action
@@ -122,27 +125,23 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let cglToRemove = self.items[indexPath.row]
             
         //check and remove credits
-            guard let cglToRemove = self.items[indexPath.row] as? CGL else {
-                // Handle the case where cglToRemove is not of type YourCoreDataEntity
-                if cglToRemove.mathCredit > 0 {
-                    self.mathCredit -= 1
-                } else if cglToRemove.englishCredit > 0 {
-                    self.englishCredit -= 1
-                } else if cglToRemove.socialStudiesCredit > 0 {
-                    self.socialStudiesCredit -= 1
-                } else if cglToRemove.scienceCredit > 0 {
-                    self.scienceCredit -= 1
-                } else if cglToRemove.healthCredit > 0 {
-                    self.healthCredit -= 1
-                } else if cglToRemove.worldLanguageCredit > 0 {
-                    self.worldLanguageCredit -= 1
-                    self.electiveCredit -= 1
-                } else if cglToRemove.electiveCredit > 0 {
-                    self.electiveCredit -= 1
-                }
-                
-                return
-            }
+    
+        if cglToRemove.mathCredit > 0 {
+            self.mathCredit -= 1
+        } else if cglToRemove.englishCredit > 0 {
+            self.englishCredit -= 1
+        } else if cglToRemove.socialStudiesCredit > 0 {
+            self.socialStudiesCredit -= 1
+        } else if cglToRemove.scienceCredit > 0 {
+            self.scienceCredit -= 1
+        } else if cglToRemove.healthCredit > 0 {
+            self.healthCredit -= 1
+        } else if cglToRemove.worldLanguageCredit > 0 {
+            self.worldLanguageCredit -= 1
+            self.electiveCredit -= 1
+        } else if cglToRemove.electiveCredit > 0 {
+            self.electiveCredit -= 1
+        }
         
         // Remove the DML
             self.cglContext.delete(cglToRemove)
@@ -170,10 +169,12 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return items.count
+   }
     
+    
+    //Evalulate grade based on score
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CGLcell", for: indexPath) as! CGLcell
