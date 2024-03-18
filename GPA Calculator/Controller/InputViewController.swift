@@ -53,7 +53,7 @@ class InputViewController: UIViewController {
         SelectType.text = "Elective"
         SelectType.isSearchEnable = true
         
-        //callback function - provided by the 3rd party library downloaded from CocoaPods
+        // didSelect is a callback function to get the values of the selection made- provided by the 3rd party library downloaded from CocoaPods
         SelectType.didSelect{ [self](selectionItem, index, id) in
             if selectionItem == "Elective" {
                 self.WorldLanguageLabel.isHidden = false
