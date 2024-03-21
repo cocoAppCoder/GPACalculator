@@ -29,7 +29,7 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var healthCreditLabel: UILabel!
     @IBOutlet weak var electivesCreditLabel: UILabel!
     @IBOutlet weak var worldLanguageLabel: UILabel!
-    
+    @IBOutlet weak var courseHistoryLabel: UILabel!
     @IBOutlet weak var CourseTable: UITableView!
     
     //reference to the data base to access the data saves
@@ -52,7 +52,7 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func fetchCGL() {
         
         do {
-            
+            // getting information and assigning it to variables/constants for convinence
             let request = CGL.fetchRequest()
             let records = try! cglContext.fetch(request)
             // XCode sums internally all the values in convertedGrade column
@@ -60,14 +60,16 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
             // XCode sums internally all the values in convertedLevel column
             let sumLevel = records.reduce(0) { $0 + ($1.value(forKey: "convertedLevel") as? Float ?? 0)}
             self.items = try cglContext.fetch(request)
-            
+            //setting gpa to a default
             if items.count == 0 {
                 unweightedGPA = 0.0
                 weightedGPA = 0.0
             } else {
+                //setting up gpa (with math)
                 unweightedGPA = Double(sumGrade) / Double(items.count)
                 weightedGPA = (Double(sumGrade) + Double(sumLevel)) / Double(items.count)
             }
+            //getting the total credits
             mathCredit = Int(records.reduce(0) { $0 + ($1.value(forKey: "mathCredit") as? Int16 ?? 0)})
             englishCredit = Int(records.reduce(0) { $0 + ($1.value(forKey: "englishCredit") as? Int16 ?? 0)})
             socialStudiesCredit = Int(records.reduce(0) { $0 + ($1.value(forKey: "socialStudiesCredit") as? Int16 ?? 0)})
@@ -75,6 +77,7 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
             healthCredit = Int(records.reduce(0) { $0 + ($1.value(forKey: "healthCredit") as? Int16 ?? 0)})
             electiveCredit = Int(records.reduce(0) { $0 + ($1.value(forKey: "electiveCredit") as? Int16 ?? 0)})
             worldLanguageCredit = Int(records.reduce(0) { $0 + ($1.value(forKey: "worldLanguageCredit") as? Int16 ?? 0)})
+            //updating to match data
             DispatchQueue.main.async {
                 self.CourseTable.reloadData()
             }
@@ -87,11 +90,15 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //loading course history
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        courseHistoryLabel.layer.cornerRadius = 20
+        courseHistoryLabel.clipsToBounds = true
+        //setting up table view
+        CourseTable.layer.cornerRadius = 20
+        CourseTable.clipsToBounds = true
         CourseTable.dataSource = self
         CourseTable.delegate = self
         
-        // get items from core data
+        // get items from core data & showing it on screen
         fetchCGL()
         GPAresult.text = "GPA = \(String(format: "%.2f", self.weightedGPA))"
         mathCreditLabel.text = "Math = \(mathCredit)/4"
@@ -180,10 +187,10 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "CGLcell", for: indexPath) as! CGLcell
         print("Dequeued cell with identifier: \(cell.reuseIdentifier ?? "nil")")
 
-      
-            cell.courseLabel.text = items[indexPath.row].course
-        cell.semesterLabel.text = items[indexPath.row].semester
-         var grade = "F"
+        //l
+        cell.courseLabel.text = items[indexPath.row].course
+        
+        var grade = "F"
         if items[indexPath.row].grade == "0-59" {
             grade = "F"
         } else if items[indexPath.row].grade == "60-69" {
@@ -195,12 +202,38 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
         } else {
             grade = "A"
         }
-        cell.gradeLabel.text = grade
-            
-        cell.levelLabel.text = items[indexPath.row].level
-        let level = items[indexPath.row].level ?? "0.0"
-        cell.levelLabel.text = level
         
+        cell.gradeLabel.text = grade
+        var level = "Stand"
+        if items[indexPath.row].level == "Standard" {
+            level = "Stand"
+        } else if items[indexPath.row].level == "Honors" {
+            level = "Honor"
+        } else {
+            level = "AP/DE"
+        }
+        cell.levelLabel.text = level
+        let convertedLevel = items[indexPath.row].level ?? "0.0"
+        
+        var semester = "Fresh 1"
+        if items[indexPath.row].semester == "Freshman 1st"{
+            semester = "Fresh 1"
+        } else if items[indexPath.row].semester == "Freshman 2nd"{
+            semester = "Fresh 2"
+        } else if items[indexPath.row].semester == "Sophmore 1st"{
+            semester = "Soph 1"
+        } else if items[indexPath.row].semester == "Sophmore 2nd"{
+            semester = "Soph 2"
+        } else if items[indexPath.row].semester == "Junior 1st"{
+            semester = "Jun 1"
+        } else if items[indexPath.row].semester == "Junior 2nd"{
+            semester = "Jun 2"
+        } else if items[indexPath.row].semester == "Senior 1st"{
+            semester = "Sen 1"
+        } else {
+            semester = "Sen 2"
+        }
+        cell.semesterLabel.text = semester
         
         return cell
     }

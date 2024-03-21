@@ -20,6 +20,8 @@
 		62F3E3A62AD4542800DF33CC /* CGL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62F3E3A42AD4542800DF33CC /* CGL.xcdatamodeld */; };
 		62F3E3F82AD462C400DF33CC /* libPods-GPA Calculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F3E3F72AD462C400DF33CC /* libPods-GPA Calculator.a */; };
 		62F3E3FA2AD462CC00DF33CC /* libiOSDropDown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62F3E3F92AD462CC00DF33CC /* libiOSDropDown.a */; };
+		62F498822BAA76DB006DDAA4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F498812BAA76DB006DDAA4 /* Launch Screen.storyboard */; };
+		62F498842BABD4A4006DDAA4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F498832BABD4A4006DDAA4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		62F3E3F52AD4623400DF33CC /* libPods-GPA Calculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-GPA Calculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F3E3F72AD462C400DF33CC /* libPods-GPA Calculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-GPA Calculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62F3E3F92AD462CC00DF33CC /* libiOSDropDown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiOSDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		62F498812BAA76DB006DDAA4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		62F498832BABD4A4006DDAA4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		64A7557F434AF22B509767E8 /* Pods-GPA Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPA Calculator.release.xcconfig"; path = "Target Support Files/Pods-GPA Calculator/Pods-GPA Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		AC0FE53D76338457F7128675 /* libPods-GPA Calculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPA Calculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,6 +143,7 @@
 				62F3E39F2AD449AD00DF33CC /* Controller */,
 				62B7E54E2AC77FA7009FD2EB /* Assets.xcassets */,
 				62B7E5532AC77FA7009FD2EB /* Info.plist */,
+				62F498832BABD4A4006DDAA4 /* README.md */,
 			);
 			path = "GPA Calculator";
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				62B7E54B2AC77FA5009FD2EB /* Main.storyboard */,
+				62F498812BAA76DB006DDAA4 /* Launch Screen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,7 +306,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62F498822BAA76DB006DDAA4 /* Launch Screen.storyboard in Resources */,
 				62B7E54F2AC77FA7009FD2EB /* Assets.xcassets in Resources */,
+				62F498842BABD4A4006DDAA4 /* README.md in Resources */,
 				62B7E54D2AC77FA5009FD2EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
