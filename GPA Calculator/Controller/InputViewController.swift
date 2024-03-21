@@ -34,7 +34,7 @@ class InputViewController: UIViewController {
         // overriding to have more than a blank screen
         // setting defaults when loading screen
         super.viewDidLoad()
-        // the screen comes up
+        
         
         // initialzing the drop down menus, giving options, and turning off the search option
         SelectLevel.optionArray = ["Standard", "Honors", "AP/DE"]
@@ -66,6 +66,7 @@ class InputViewController: UIViewController {
         
     }
     
+
     // giving instructions for when the Add Course button is clicked
     @IBAction func AddCourseClicked(_ sender: Any) {
         //values of the textfields when clicked

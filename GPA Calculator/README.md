@@ -1,5 +1,5 @@
 About the Project:
-    The GPA Calculator's primary purpose is to calculate a Wake County Public High School student's GPA. It also shows the amount of credits they have taken compared to the total amount mandatory for graduation and a chatbot for student's questions on GPA.
+    The GPA Calculator's primary purpose is to calculate a Wake County Public High School student's GPA. It also shows the amount of credits they have taken compared to the total amount mandatory for graduation and a chatbot for student's questions on GPA. If a user wants to delete a course for whatever reason, they can swipe left on the course in the table to delete it.
 Built With
     The GPA Calculator is built using the Xcode platform with the Swift programming language. Core Data is used to save the information entered by the user.
 Getting Started

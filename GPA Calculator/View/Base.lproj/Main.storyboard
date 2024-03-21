@@ -36,7 +36,7 @@
                                 <rect key="frame" x="23" y="676" width="285" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="go"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOm-Jt-QqW">
                                 <rect key="frame" x="309" y="703" width="68" height="34"/>
@@ -521,7 +521,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hdl-qj-g7a"/>
+        <segue reference="mas-Ff-ST0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="questionmark.circle" catalog="system" width="128" height="123"/>

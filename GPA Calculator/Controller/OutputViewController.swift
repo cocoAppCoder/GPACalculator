@@ -100,7 +100,7 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // get items from core data & showing it on screen
         fetchCGL()
-        GPAresult.text = "GPA = \(String(format: "%.2f", self.weightedGPA))"
+        GPAresult.text = "GPA = \(String(format: "%.3f", self.weightedGPA))"
         mathCreditLabel.text = "Math = \(mathCredit)/4"
         englishCreditLabel.text = "English = \(englishCredit)/4"
         socialStudiesCreditLabel.text = "Social Studies = \(socialStudiesCredit)/4"
@@ -115,9 +115,9 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func WeightedSwitch(_ sender: UISwitch) {
         self.fetchCGL()
         if sender.isOn {
-            GPAresult.text = "GPA = \(String(format: "%.2f", self.weightedGPA))"
+            GPAresult.text = "GPA = \(String(format: "%.3f", self.weightedGPA))"
         } else {
-            GPAresult.text = "GPA = \(String(format: "%.2f", self.unweightedGPA))"
+            GPAresult.text = "GPA = \(String(format: "%.3f", self.unweightedGPA))"
         }
     }
     
@@ -165,9 +165,9 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.fetchCGL()
             
             if self.WeightedSwitch.isOn {
-                self.GPAresult.text = "GPA = \(String(format: "%.2f", self.weightedGPA))"
+                self.GPAresult.text = "GPA = \(String(format: "%.3f", self.weightedGPA))"
             } else {
-                self.GPAresult.text = "GPA = \(String(format: "%.2f", self.unweightedGPA))"
+                self.GPAresult.text = "GPA = \(String(format: "%.3f", self.unweightedGPA))"
             }
            
         }
