@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import CoreData
-
+import iOSDropDown
 class CGLcell: UITableViewCell {
     
     @IBOutlet weak var courseLabel: UILabel!
@@ -22,6 +22,7 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
  
     @IBOutlet weak var WeightedSwitch: UISwitch!
     @IBOutlet weak var GPAresult: UILabel!
+    @IBOutlet weak var CreditCount: DropDown!
     @IBOutlet weak var mathCreditLabel: UILabel!
     @IBOutlet weak var englishCreditLabel: UILabel!
     @IBOutlet weak var socialStudiesCreditLabel: UILabel!
@@ -101,13 +102,15 @@ class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // get items from core data & showing it on screen
         fetchCGL()
         GPAresult.text = "GPA = \(String(format: "%.3f", self.weightedGPA))"
-        mathCreditLabel.text = "Math = \(mathCredit)/4"
-        englishCreditLabel.text = "English = \(englishCredit)/4"
-        socialStudiesCreditLabel.text = "Social Studies = \(socialStudiesCredit)/4"
-        scienceCreditLabel.text = "Science = \(scienceCredit)/3"
-        healthCreditLabel.text = "Health = \(healthCredit)/1"
-        electivesCreditLabel.text = "Elective = \(electiveCredit)/6"
-        worldLanguageLabel.text = "World Language = \(worldLanguageCredit)/2"
+        CreditCount.isSearchEnable = false
+        CreditCount.optionArray =
+        ["Math = \(mathCredit)/4",
+         "English = \(englishCredit)/4",
+         "Social Studies = \(socialStudiesCredit)/4",
+         "Science = \(scienceCredit)/3",
+         "Health = \(healthCredit)/1",
+         "Elective = \(electiveCredit)/6",
+         "World Language = \(worldLanguageCredit)/2"]
     }
     
 

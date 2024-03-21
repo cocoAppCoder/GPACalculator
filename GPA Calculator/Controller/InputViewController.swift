@@ -30,6 +30,15 @@ class InputViewController: UIViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     // refrence to the data from core data to be used in code
     
+    //code so that when user taps out, keyboard goes away
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    func initializeHideKeyboard() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
     override func viewDidLoad() {
         // overriding to have more than a blank screen
         // setting defaults when loading screen
