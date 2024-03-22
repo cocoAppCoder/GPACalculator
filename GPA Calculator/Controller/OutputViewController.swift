@@ -18,6 +18,8 @@ class CGLcell: UITableViewCell {
     
 }
 
+//Implemented UITableViewDelegate protocol to work with table rows
+//Implemented UITableViewDataSource protocol to work with the table data 
 class OutputViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
  
     @IBOutlet weak var WeightedSwitch: UISwitch!

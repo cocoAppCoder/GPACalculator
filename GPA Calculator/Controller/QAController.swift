@@ -31,6 +31,9 @@ class QAController:UIViewController{
         "world language":"World Langauge Credit is not manditory, but is sought after be the majority of colleges. UNC requires 2 foreign language credits, which is what the wake county system reccomends.",
         "credits":"Each course earns 1 credit. If a student in an AP class scores well on the AP exam, that credit will count towards their college credits along with high school credits. Also, if a student took high school level courses prior to high school, that credit will be added to the high school credits. A student needs 22 credits total to graduate"
     ]
+    
+    
+    
     @IBAction func AskButtonPressed(_ sender: Any) {
         let broken_up_words = QAtextField.text?.split(separator: " ")
         for word in broken_up_words! {

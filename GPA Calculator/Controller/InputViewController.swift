@@ -39,12 +39,12 @@ class InputViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    // overriding to have more than a blank screen
     override func viewDidLoad() {
-        // overriding to have more than a blank screen
+        
+        super.viewDidLoad() //parent call to load the view
+        
         // setting defaults when loading screen
-        super.viewDidLoad()
-        
-        
         // initialzing the drop down menus, giving options, and turning off the search option
         SelectLevel.optionArray = ["Standard", "Honors", "AP/DE"]
         SelectLevel.text = "Standard"
@@ -76,9 +76,9 @@ class InputViewController: UIViewController {
     }
     
 
-    // giving instructions for when the Add Course button is clicked
+    // course information entered is saved in CoreDatabase when the Add COurse button is clicked
     @IBAction func AddCourseClicked(_ sender: Any) {
-        //values of the textfields when clicked
+        
         // ?? = Nil-Coalescing Operator : check if it is nil. if nil, gives default value
         InvalidCourse.isHidden = true
         let courseName = EnterCourseName.text ?? ""
